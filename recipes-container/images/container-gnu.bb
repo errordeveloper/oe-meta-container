@@ -2,7 +2,6 @@ LICENSE = "MIT"
 
 IMAGE_FEATURES = ""
 IMAGE_LINGUAS = ""
-PACKAGE_INSTALL = "bash"
-#PACKAGE_INSTALL = "coreutils findutils sed gawk"
+PACKAGE_INSTALL = "bash coreutils findutils sed grep gawk"
 
 inherit core-image
