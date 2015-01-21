@@ -9,13 +9,14 @@ LICENSE = "MIT"
 
 inherit packagegroup
 
+#PACKAGEGROUP_DISABLE_COMPLEMENTARY = "1"
+
 PACKAGES = "\
     packagegroup-self-hosted-minimal \
     packagegroup-self-hosted-minimal-debug \
     packagegroup-self-hosted-minimal-sdk \
     packagegroup-self-hosted-minimal-extended \
     packagegroup-self-hosted-minimal-host-tools \
-    packagegroup-self-hosted-minimal-graphics \
     "
 
 RDEPENDS_packagegroup-self-hosted-minimal = "\
@@ -24,6 +25,18 @@ RDEPENDS_packagegroup-self-hosted-minimal = "\
     packagegroup-self-hosted-minimal-extended \
     packagegroup-self-hosted-minimal-host-tools \
     "
+#    nativesdk-pkgconfig 
+#    nativesdk-qemu
+#    nativesdk-qemu-helper
+#    nativesdk-pseudo
+#    nativesdk-unfs3
+#    nativesdk-opkg
+#    nativesdk-libtool
+#    nativesdk-autoconf
+#    nativesdk-automake
+#    nativesdk-shadow
+#    nativesdk-makedevs
+#    nativesdk-postinst-intercept
 
 # midori depends on webkit-gtk which could not build for mips64
 MIDORI = "midori"
