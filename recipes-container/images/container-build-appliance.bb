@@ -1,11 +1,14 @@
 LICENSE = "MIT"
 
 PACKAGE_INSTALL = "\
-    packagegroup-self-hosted-minimal \
     base-passwd \
+    packagegroup-self-hosted-minimal \
     "
 
-IMAGE_FEATURES += "package-management"
+IMAGE_FEATURES += "\
+    dev-pkgs \
+    package-management \
+    "
 
 IMAGE_LINGUAS = ""
 
