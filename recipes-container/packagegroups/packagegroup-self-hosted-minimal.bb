@@ -9,8 +9,6 @@ LICENSE = "MIT"
 
 inherit packagegroup
 
-#PACKAGEGROUP_DISABLE_COMPLEMENTARY = "1"
-
 PACKAGES = "\
     packagegroup-self-hosted-minimal \
     packagegroup-self-hosted-minimal-debug \
@@ -25,22 +23,6 @@ RDEPENDS_packagegroup-self-hosted-minimal = "\
     packagegroup-self-hosted-minimal-extended \
     packagegroup-self-hosted-minimal-host-tools \
     "
-#    nativesdk-pkgconfig 
-#    nativesdk-qemu
-#    nativesdk-qemu-helper
-#    nativesdk-pseudo
-#    nativesdk-unfs3
-#    nativesdk-opkg
-#    nativesdk-libtool
-#    nativesdk-autoconf
-#    nativesdk-automake
-#    nativesdk-shadow
-#    nativesdk-makedevs
-#    nativesdk-postinst-intercept
-
-# midori depends on webkit-gtk which could not build for mips64
-MIDORI = "midori"
-MIDORI_mips64 = ""
 
 RDEPENDS_packagegroup-self-hosted-minimal-host-tools = "\
     lsb \
@@ -97,6 +79,7 @@ RDEPENDS_packagegroup-self-hosted-minimal-debug = " \
 
 
 RDEPENDS_packagegroup-self-hosted-minimal-extended = "\
+    ${PTH} \
     bzip2 \
     chkconfig \
     chrpath \
@@ -117,11 +100,14 @@ RDEPENDS_packagegroup-self-hosted-minimal-extended = "\
     groff \
     gzip \
     libaio \
+    libsdl \
+    libsdl-dev \
     libusb1 \
     libxml2 \
     lrzsz \
     lsof \
     lzo \
+    makedevs \
     man \
     man-pages \
     mdadm \
@@ -132,8 +118,8 @@ RDEPENDS_packagegroup-self-hosted-minimal-extended = "\
     neon \
     nfs-utils \
     nfs-utils-client \
-    openssl \
     openssh-sftp-server \
+    openssl \
     opkg \
     opkg-utils \
     patch \
@@ -141,7 +127,6 @@ RDEPENDS_packagegroup-self-hosted-minimal-extended = "\
     perl-dev \
     perl-modules \
     perl-pod \
-    ${PTH} \
     python \
     python-compile \
     python-compiler \
@@ -175,12 +160,12 @@ RDEPENDS_packagegroup-self-hosted-minimal-extended = "\
     python-unixadmin \
     python-xmlrpc \
     qemu \
+    qemu-helper \
     quota \
     readline \
     rpm \
     setserial \
-    libsdl \
-    libsdl-dev \
+    shadow \
     socat \
     subversion \
     sudo \
@@ -189,16 +174,19 @@ RDEPENDS_packagegroup-self-hosted-minimal-extended = "\
     tcl \
     texi2html \
     texinfo \
+    unfs3 \
     unzip \
     usbutils \
     watchdog \
     wget \
     which \
     xinetd \
+    xz \
     zip \
     zlib \
-    xz \
     "
+
+#XXX: nativesdk-postinst-intercept
 
 PTH = "pth"
 PTH_libc-uclibc = ""
