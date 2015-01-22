@@ -15,6 +15,7 @@ PACKAGES = "\
     packagegroup-self-hosted-minimal-sdk \
     packagegroup-self-hosted-minimal-extended \
     packagegroup-self-hosted-minimal-host-tools \
+    packagegroup-self-hosted-minimal-graphics \
     "
 
 RDEPENDS_packagegroup-self-hosted-minimal = "\
@@ -34,14 +35,6 @@ RDEPENDS_packagegroup-self-hosted-minimal-host-tools = "\
     pseudo \
     screen \
     "
-
-#RRECOMMENDS_packagegroup-self-hosted-host-tools = "\
-#    kernel-module-tun \
-#    kernel-module-iptable-raw \
-#    kernel-module-iptable-nat \
-#    kernel-module-iptable-mangle \
-#    kernel-module-iptable-filter \
-#	"
 
 #XXX: distcc
 #EXTRA_OECONF_distcc_append = "--without-gtk"
@@ -90,7 +83,6 @@ RDEPENDS_packagegroup-self-hosted-minimal-debug = " \
     tcf-agent"
 
 
-# XXX: settings-daemon (pulls in gtk+)
 RDEPENDS_packagegroup-self-hosted-minimal-extended = "\
     bzip2 \
     chkconfig \
@@ -169,6 +161,7 @@ RDEPENDS_packagegroup-self-hosted-minimal-extended = "\
     python-unittest \
     python-unixadmin \
     python-xmlrpc \
+    qemu \
     quota \
     readline \
     rpm \
@@ -192,23 +185,5 @@ RDEPENDS_packagegroup-self-hosted-minimal-extended = "\
     xz \
     "
 
-
-#RDEPENDS_packagegroup-self-hosted-graphics = "\
-#    builder \
-#    libgl \
-#    libgl-dev \
-#    libglu \
-#    libglu-dev \
-#    libsdl \
-#    libsdl-dev \
-#    libx11-dev \
-#    python-pygtk \
-#    gtk-theme-clearlooks \
-#    xdg-utils \
-#    ${MIDORI} \
-#    leafpad \
-#    pcmanfm \
-#    vte \
-#    "
 PTH = "pth"
 PTH_libc-uclibc = ""
