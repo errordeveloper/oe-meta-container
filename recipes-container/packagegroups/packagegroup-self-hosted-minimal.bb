@@ -31,6 +31,8 @@ RDEPENDS_packagegroup-self-hosted-minimal-host-tools = "\
     screen \
     "
 
+RPM_NATIVE_WRAPPERS = "1"
+
 #XXX: distcc
 #EXTRA_OECONF_distcc_append = "--without-gtk"
 
@@ -53,6 +55,7 @@ RDEPENDS_packagegroup-self-hosted-minimal-sdk = "\
     gcc \
     gcc-symlinks \
     intltool \
+    kconfig-frontends \
     ldd \
     less \
     libssp \
@@ -87,6 +90,7 @@ RDEPENDS_packagegroup-self-hosted-minimal-extended = "\
     curl \
     diffstat \
     diffutils \
+    dpkg \
     elfutils \
     expat \
     gamin \
@@ -160,13 +164,19 @@ RDEPENDS_packagegroup-self-hosted-minimal-extended = "\
     python-unixadmin \
     python-xmlrpc \
     qemu \
-    qemu-helper \
     quota \
     readline \
     rpm \
+    rpm-build \
+    rpm-common \
+    rpm-libs \
+    rpm-dev \
     setserial \
     shadow \
     socat \
+    unifdef \
+    util-linux \
+    pigz \
     subversion \
     sudo \
     sysstat \
@@ -184,9 +194,12 @@ RDEPENDS_packagegroup-self-hosted-minimal-extended = "\
     xz \
     zip \
     zlib \
+    e2fsprogs \
+    ldconfig \
     "
 
 #XXX: nativesdk-postinst-intercept
 
 PTH = "pth"
 PTH_libc-uclibc = ""
+
