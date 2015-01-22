@@ -166,6 +166,8 @@ RDEPENDS_packagegroup-self-hosted-minimal-extended = "\
     readline \
     rpm \
     setserial \
+    libsdl \
+    libsdl-dev \
     socat \
     subversion \
     sudo \
