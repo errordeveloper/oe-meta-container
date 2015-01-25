@@ -1,0 +1,18 @@
+#!/bin/bash -x
+
+mkdir -p ${1};
+cp -rs /bin /etc /lib /sbin /usr /var ${1};
+rm -rf \
+	${1}/usr/lib/pkgconfig/python2.pc \
+	${1}/usr/lib/pkgconfig/python.pc \
+	${1}/usr/lib/pkgconfig/python-2.7.pc \
+	${1}/usr/include/python2.7/ \
+	${1}/usr/lib/python2.7/ \
+	${1}/usr/lib/libpython2.7* \
+        ${1}/usr/bin/libtoolize \
+        ${1}/usr/lib/libltdl.la \
+        ${1}/usr/share/aclocal/argz.m4 \
+        ${1}/usr/share/libtool/ \
+        ${1}/usr/bin/pkg-config \
+        ${1}/usr/share/aclocal/pkg.m4 \
+;
