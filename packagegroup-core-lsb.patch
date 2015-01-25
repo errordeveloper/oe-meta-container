@@ -1,0 +1,71 @@
+diff --git a/meta/recipes-extended/packagegroups/packagegroup-core-lsb.bb b/meta/recipes-extended/packagegroups/packagegroup-core-lsb.bb
+index 636ed65..a5542c1 100644
+--- a/meta/recipes-extended/packagegroups/packagegroup-core-lsb.bb
++++ b/meta/recipes-extended/packagegroups/packagegroup-core-lsb.bb
+@@ -90,7 +90,6 @@ RDEPENDS_packagegroup-core-lsb-misc = "\
+     gettext \
+     gettext-runtime \
+     groff \
+-    lsbtest \
+     lsof \
+     strace \
+     rpm \
+@@ -100,14 +99,12 @@ SUMMARY_packagegroup-core-lsb-core = "LSB Core"
+ DESCRIPTION_packagegroup-core-lsb-core = "Packages required to support commands/libraries \
+     specified in the LSB Core specification"
+ RDEPENDS_packagegroup-core-lsb-core = "\
+-    at \
+     bash \
+     bc \
+     binutils \
+     binutils-symlinks \
+     coreutils \
+     cpio \
+-    cups \
+     diffutils \
+     ed \
+     glibc-utils \
+@@ -124,9 +121,6 @@ RDEPENDS_packagegroup-core-lsb-core = "\
+     man \
+     mktemp \
+     patch \
+-    pax \
+-    procps \
+-    psmisc \
+     sed \
+     shadow \
+     tar \
+@@ -137,9 +131,6 @@ RDEPENDS_packagegroup-core-lsb-core = "\
+     libxml2 \
+     ncurses \
+     zlib \
+-    nspr \
+-    libpng12 \
+-    nss \
+ "
+ 
+ SUMMARY_packagegroup-core-lsb-perl = "LSB Runtime Languages (Perl)"
+@@ -166,10 +157,6 @@ RDEPENDS_packagegroup-core-lsb-python = "\
+ RDEPENDS_packagegroup-core-lsb-runtime-add = "\
+     ldd \
+     e2fsprogs-mke2fs \
+-    liburi-perl \
+-    libxml-parser-perl \
+-    libxml-perl \
+-    libxml-sax-perl \
+     glibc-localedatas \
+     glibc-gconvs \
+     glibc-charmaps \
+@@ -177,12 +164,6 @@ RDEPENDS_packagegroup-core-lsb-runtime-add = "\
+     glibc-localedata-posix \
+     glibc-extra-nss \
+     glibc-pcprofile \
+-    libclass-isa-perl \
+-    libenv-perl \
+-    libdumpvalue-perl \
+-    libfile-checktree-perl \
+-    libi18n-collate-perl \
+-    libpod-plainer-perl \
+ "
+ 
+ PTH = "pth"
