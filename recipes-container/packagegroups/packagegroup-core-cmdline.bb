@@ -82,11 +82,7 @@ RDEPENDS_packagegroup-core-cmdline-utils = "\
     makedevs \
     mktemp \
     ncurses \
-    net-tools \
-    pax \
     popt \
-    procps \
-    psmisc \
     sed \
     tar \
     time \
@@ -112,9 +108,7 @@ RDEPENDS_packagegroup-core-cmdline-multiuser = "\
     "
 
 RDEPENDS_packagegroup-core-cmdline-sys-services = "\
-    at \
     bzip2 \
-    cronie \
     dbus \
     dbus-glib \
     python-dbus \
@@ -123,11 +117,9 @@ RDEPENDS_packagegroup-core-cmdline-sys-services = "\
     less \
     libcap \
     libevent \
-    lighttpd \
     nfs-utils \
     libpcre \
     rpcbind \
-    sysfsutils \
     tcp-wrappers \
     tzdata \
     "

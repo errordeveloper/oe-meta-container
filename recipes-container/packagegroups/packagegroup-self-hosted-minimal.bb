@@ -42,6 +42,7 @@ RDEPENDS_packagegroup-self-hosted-minimal-sdk = "\
     automake \
     binutils \
     binutils-symlinks \
+    cross-localedef \
     ccache \
     coreutils \
     cpp \
@@ -71,6 +72,7 @@ RDEPENDS_packagegroup-self-hosted-minimal-sdk = "\
     pkgconfig \
     quilt \
     sed \
+    net-tools \
     "
 
 RDEPENDS_packagegroup-self-hosted-minimal-debug = " \
@@ -102,7 +104,6 @@ RDEPENDS_packagegroup-self-hosted-minimal-extended = "\
     git-perltools \
     grep \
     groff \
-    gzip \
     libaio \
     libsdl \
     libsdl-dev \
@@ -115,9 +116,12 @@ RDEPENDS_packagegroup-self-hosted-minimal-extended = "\
     man \
     man-pages \
     mdadm \
+    mklibs \
+    kern-tools \
     minicom \
     mtools \
     ncurses \
+    ncurses-tools \
     ncurses-terminfo-base \
     neon \
     nfs-utils \
@@ -184,6 +188,7 @@ RDEPENDS_packagegroup-self-hosted-minimal-extended = "\
     tcl \
     texi2html \
     texinfo \
+    texinfo-dummy \
     unfs3 \
     unzip \
     usbutils \
